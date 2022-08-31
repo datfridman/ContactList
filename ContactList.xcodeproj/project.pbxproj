@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CD0F5F7928BF8C5D00140943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F5F7828BF8C5D00140943 /* AppDelegate.swift */; };
 		CD0F5F7B28BF8C5D00140943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F5F7A28BF8C5D00140943 /* SceneDelegate.swift */; };
-		CD0F5F7D28BF8C5D00140943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F5F7C28BF8C5D00140943 /* ViewController.swift */; };
 		CD0F5F8028BF8C5D00140943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0F5F7E28BF8C5D00140943 /* Main.storyboard */; };
 		CD0F5F8228BF8C5F00140943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0F5F8128BF8C5F00140943 /* Assets.xcassets */; };
 		CD0F5F8528BF8C5F00140943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0F5F8328BF8C5F00140943 /* LaunchScreen.storyboard */; };
+		CD0F5F8D28BFAE6800140943 /* SimplePersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F5F8C28BFAE6700140943 /* SimplePersonListViewController.swift */; };
+		CD0F5F8F28BFB6DA00140943 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F5F8E28BFB6DA00140943 /* Person.swift */; };
+		CDC1363D28BFCA5300BC2644 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC1363C28BFCA5300BC2644 /* DataManager.swift */; };
+		CDC1364128BFD6ED00BC2644 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC1364028BFD6ED00BC2644 /* PersonDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD0F5F7528BF8C5D00140943 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0F5F7828BF8C5D00140943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD0F5F7A28BF8C5D00140943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD0F5F7C28BF8C5D00140943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD0F5F7F28BF8C5D00140943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD0F5F8128BF8C5F00140943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0F5F8428BF8C5F00140943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD0F5F8628BF8C5F00140943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0F5F8C28BFAE6700140943 /* SimplePersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePersonListViewController.swift; sourceTree = "<group>"; };
+		CD0F5F8E28BFB6DA00140943 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CDC1363C28BFCA5300BC2644 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CDC1364028BFD6ED00BC2644 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		CD0F5F7728BF8C5D00140943 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				CD0F5F7828BF8C5D00140943 /* AppDelegate.swift */,
-				CD0F5F7A28BF8C5D00140943 /* SceneDelegate.swift */,
-				CD0F5F7C28BF8C5D00140943 /* ViewController.swift */,
-				CD0F5F7E28BF8C5D00140943 /* Main.storyboard */,
+				CDC1364428BFE17C00BC2644 /* ViewControllers */,
+				CDC1364528BFE18800BC2644 /* Models */,
+				CDC1364228BFE15300BC2644 /* Storyboards */,
+				CDC1364328BFE16600BC2644 /* SupportFiles */,
 				CD0F5F8128BF8C5F00140943 /* Assets.xcassets */,
-				CD0F5F8328BF8C5F00140943 /* LaunchScreen.storyboard */,
 				CD0F5F8628BF8C5F00140943 /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		CDC1364228BFE15300BC2644 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F5F7E28BF8C5D00140943 /* Main.storyboard */,
+				CD0F5F8328BF8C5F00140943 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CDC1364328BFE16600BC2644 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F5F7828BF8C5D00140943 /* AppDelegate.swift */,
+				CD0F5F7A28BF8C5D00140943 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CDC1364428BFE17C00BC2644 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F5F8C28BFAE6700140943 /* SimplePersonListViewController.swift */,
+				CDC1364028BFD6ED00BC2644 /* PersonDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CDC1364528BFE18800BC2644 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F5F8E28BFB6DA00140943 /* Person.swift */,
+				CDC1363C28BFCA5300BC2644 /* DataManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0F5F7D28BF8C5D00140943 /* ViewController.swift in Sources */,
+				CD0F5F8D28BFAE6800140943 /* SimplePersonListViewController.swift in Sources */,
+				CDC1363D28BFCA5300BC2644 /* DataManager.swift in Sources */,
+				CDC1364128BFD6ED00BC2644 /* PersonDetailsViewController.swift in Sources */,
 				CD0F5F7928BF8C5D00140943 /* AppDelegate.swift in Sources */,
+				CD0F5F8F28BFB6DA00140943 /* Person.swift in Sources */,
 				CD0F5F7B28BF8C5D00140943 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +337,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +349,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +366,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
