@@ -11,10 +11,6 @@ class SimplePersonListViewController: UITableViewController {
     
     private var personsList = Person.getPerson()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 
     // MARK: - Table view data source
 
